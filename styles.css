@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #f7f8fe;
+    padding: 1rem;
+}
+
+
+.nav-btn {
+    color: black;
+    position: relative;
+}
+
+.nav-btn::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #43e97b;
+    transition: 0.25s ease-out;
+}
+
+.nav-btn:hover::before {
+    width: 100%;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 2rem;
+    background-color: #677ee9;
+    color: white;
+}
+
+main {
+    margin-top: 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.hero h2 {
+    font-size: 1.2rem;
+}
+
+.hero-btn-section {
+    padding-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.white-btn {
+    padding: 15px 35px;
+    background-color: white;
+    color: #677ee9;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+
+.white-btn:hover {
+    transform: scale(1.2);
+}
+
+.blue-btn {
+    padding: 15px 35px;
+    color: white;
+    border: white solid 2px;
+    background: none;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.blue-btn:hover {
+    background-color: #f7f8fe;
+    color: #677ee9;
+}
+
+.box-container {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: aliceblue;
+    border-radius: 8px;
+
+
+}
+
+.box1 {
+    animation: box-up-left;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    top: 10%;
+    right: 15%;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.box2 {
+    animation: box-up-right;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    top: 50%;
+    right: 10%;
+}
+
+.box3 {
+    animation: box-up-right;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    top: 50%;
+    top: 10%;
+    left: 20%;
+}
+
+
+@keyframes box-up-left {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    100% {
+        /* Move left (-50px), up (-50px), and tilt */
+        transform: translate(-50px, -50px) rotate(-30deg);
+    }
+}
+
+@keyframes box-up-right {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    100% {
+        /* Move left (-50px), up (-50px), and tilt */
+        transform: translate(50px, 50px) rotate(-30deg);
+    }
+}
+
+@keyframes slide-from-left{
+    0%{
+        transform: translateX(-100px);
+        opacity : 0;
+    }100%{
+        transform: translateX(0);
+        opacity : 1;
+    }
+}
+
+.hero-left{
+    animation: slide-from-left;
+    animation-duration: 2s;
+    animation-timing-function:ease-out
+
+}
