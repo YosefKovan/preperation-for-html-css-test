@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./gallery.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <header class="col-12 flex-col gap-1">
+          <nav
+            class="flex-col justify-content-center space-md-between flex-md-row align-items-center"
+          >
+            <h1 class="">CSS Grid Learning</h1>
+            <ul class="flex-row justify-content-center gap-1">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <section class="col-12 img-header">
+          <h1>Image Gallery Example</h1>
+          <h2>
+            This gallery uses grid-column and span to create items of different
+            sizes.
+          </h2>
+        </section>
+
+        <main class="col-12">
+          <section class="gallery">
+            <figure id="img-1">
+              <img src="./images/1024-400x400.jpg" />
+              <figcaption>span 2 columns</figcaption>
+            </figure>
+            <figure id="img-2">
+              <img src="./images/39-600x400.jpg" />
+              <figcaption>Regualr</figcaption>
+            </figure>
+            <figure id="img-3">
+              <img src="./images/629-800x800.jpg" />
+              <figcaption>Regualr</figcaption>
+            </figure>
+            <figure id="img-4">
+              <img src="./images/777-400x400.jpg" />
+              <figcaption>Span 2 Rows</figcaption>
+            </figure>
+            <figure id="img-5">
+              <img src="./images/905-400x800.jpg" />
+              <figcaption>Span 2 Rows and 2 Cols</figcaption>
+            </figure>
+            <figure id="img-6">
+              <img src="./images/1024-400x400.jpg" />
+              <figcaption>Regualr</figcaption>
+            </figure>
+            <figure id="img-7">
+              <img src="./images/39-600x400.jpg" />
+              <figcaption>Regualr</figcaption>
+            </figure>
+          </section>
+        </main>
+        <footer class="col-12">
+            © 2024 CSS Grid Exercise | Learning Resource for Students
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <header class="col-12">
+          <nav class="flex-col justify-content-center space-md-between flex-md-row align-items-center">
+            <h1 class="">CSS Grid Learning</h1>
+            <ul class="flex-row justify-content-center gap-1">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+          </nav>
+        </header>
+        <aside class="col-12 col-md-3">
+          <nav>
+            <h2>Menu</h2>
+            <ul>
+              <li class="menu-link">Getting Started</li>
+              <li class="menu-link">Grid Basics</li>
+              <li class="menu-link">Grid Properties</li>
+              <li class="menu-link">Examples</li>
+            </ul>
+          </nav>
+        </aside>
+        <main class="col-12 col-md-9">
+          <h1>Contact Form with Pseudo Selectors</h1>
+          <h2>
+            This form demonstrates various CSS pseudo selectors: :hover,
+            :active, :focus, and :nth-child.
+          </h2>
+          <form class="row">
+            <div class="input-group col-12 flex-col">
+              <label for="full-name">Full Name:</label>
+              <input class="input-style"
+                id="full-name"
+                class="input"
+                name="full-name"
+                type="text"
+                placeholder="Enter Your name"
+              />
+            </div>
+
+            <div class="input-group col-12 flex-col">
+              <label for="email">Email Address: </label>
+              <input class="input-style"
+                id="email"
+                name="email"
+                class="input"
+                type="email"
+                placeholder="your.email@example.com"
+              />
+            </div>
+
+            <div class="input-group col-12 flex-col">
+              <label for="phone">Phone Number:</label>
+              <input class="input-style"
+                id="phone"
+                name="phone"
+                class="input"
+                type="text"
+                placeholder="(123) 456-7890"
+              />
+            </div>
+
+            <div class="input-group col-12 flex-col">
+              <label for="subject">Subject:</label>
+              <input class="input-style"
+                id="subject"
+                name="subject"
+                class="input"
+                type="text"
+                placeholder="What is this about?"
+              />
+            </div>
+
+            <div class="input-group col-12 flex-col">
+              <label for="message">Message:</label>
+              <textarea class="input-style"
+                id="message"
+                name="message"
+                class="input"
+                rows="5"
+                type="texarea"
+                placeholder="Type your message here..."
+              ></textarea>
+            </div>
+
+            <div class="input-group col-12 flex-col">
+              <label for="priority">Priority Level:</label>
+              <select class="input-style" name="priority" class="input" id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="urgent">Urgent</option>
+              </select>
+            </div>
+
+            <div class="input-group col-12">
+              <div>
+                <input id="newsletter" name="newsletter" type="checkbox" />
+                <label for="newsletter"> Subscribe to newsletter</label>
+              </div>
+
+              <div>
+                <input id="terms" name="terms" type="checkbox" required />
+                <label for="terms"> I agree to terms and conditions</label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button disabled>Submit Form</button>
+              <button class="reset-button">Reset Form</button>
+            </div>
+          </form>
+          <setion class="main-bottom-container">
+            <h2>Pseudo Selectors Used:</h2>
+            <ul>
+              <li>
+                hover - Applied to buttons and inputs when you mouse over them
+              </li>
+              <li>focus - Applied to inputs when you click or tab into them</li>
+              <li>active - Applied to buttons when you click and hold them</li>
+              <li>
+                visited - Applied to navigation links you've already visited
+              </li>
+              <li>
+                nth-child - Applied to style specific form groups differently
+              </li>
+            </ul>
+          </setion>
+        </main>
+        <footer class="col-12">
+            © 2024 CSS Grid Exercise | Learning Resource for Students
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
